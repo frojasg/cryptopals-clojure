@@ -9,3 +9,16 @@
 (deftest fixed-xor-test
   (testing "fixed xor"
     (is (= (fixed-xor "1c0111001f010100061a024b53535009181c" "686974207468652062756c6c277320657965") "746865206b696420646f6e277420706c6179"))))
+
+
+(deftest ngram-generate-function
+  (testing "ngram is generating a function"
+    (is (function? (ngram "resources/english_monograms.txt")))))
+
+(deftest english-monogram-test
+  (testing "function to see if a word is english"
+    (is (> (english-monogram "Hello") (english-monogram "SDFSQ")))))
+
+(deftest english-quadgrams-test
+  (testing "let try with english quadram"
+    (is (> (english-quadgrams "ATTACK THE EAST WALL OF THE CASTLE AT DAWN") (english-quadgrams "FYYFHP YMJ JFXY BFQQ TK YMJ HFXYQJ FY IFBS")))))
