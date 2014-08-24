@@ -1,36 +1,27 @@
 # cryptopals
 
-FIXME: description
+http://cryptopals.com/ in Clojure
 
-## Installation
+## Running the tests
 
-Download from http://example.com/FIXME.
+    $ lein test
 
-## Usage
+## Challenges
 
-FIXME: explanation
+###Set 1
 
-    $ java -jar cryptopals-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+- [x] Challenge 1
+- [x] Challenge 2
+- [ ] Challenge 3
+- [ ] Challenge 4
+- [ ] Challenge 5
+- [ ] Challenge 6
+- [ ] Challenge 7
+- [ ] Challenge 8
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Francisco Rojas
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
