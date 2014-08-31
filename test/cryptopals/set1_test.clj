@@ -17,8 +17,12 @@
 
 (deftest english-monogram-test
   (testing "function to see if a word is english"
-    (is (> (english-monogram "Hello") (english-monogram "SDFSQ")))))
+    (is (> (english-monogram "Hello") (english-monogram "QWERQ")))))
 
 (deftest english-quadgrams-test
   (testing "let try with english quadram"
     (is (> (english-quadgrams "ATTACK THE EAST WALL OF THE CASTLE AT DAWN") (english-quadgrams "FYYFHP YMJ JFXY BFQQ TK YMJ HFXYQJ FY IFBS")))))
+
+(deftest hex-str-single-byte-xor-cipher-test
+  (testing "Single-byte XOR cipher"
+    (is (= (hex-str-single-byte-xor-cipher "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736") "ola"))))
